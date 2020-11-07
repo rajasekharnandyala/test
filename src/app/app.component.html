@@ -1,0 +1,15 @@
+<button (click)="print()">Print</button>
+<div id="myAnchor" class="test">
+  <span [innerHTML]="applese"></span>
+</div>
+<div class="modal-body" style="height:70vh;">
+  <ng2-pdfjs-viewer #externalPdfViewer pdfSrc="{{pdfData}}" [useOnlyCssZoom]=true [showSpinner]="true"></ng2-pdfjs-viewer>
+</div>
+<!-- <ng-multiselect-dropdown
+[settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+>
+</ng-multiselect-dropdown> -->
